@@ -17,7 +17,7 @@ String listProjectItems() {
     if (projectFolder) {
 
         for (job in projectFolder.items.sort{it.name.toUpperCase()}) {
-            b.append(',').append(job.getName)
+            b.append(',').append(job)
         }
         return b.substring(1) // dump the initial comma
     }
