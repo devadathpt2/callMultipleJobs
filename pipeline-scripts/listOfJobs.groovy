@@ -13,11 +13,13 @@ def Folder findFolder(String folderName) {
 
 def String listProjectItems() {
     Folder projectFolder = findFolder('TestJobs')
-    String jobName
+    StringBuilder b = new StringBuilder()
+    string jobName
     if (projectFolder) {
 
         for (job in projectFolder.items.sort{it.name}) {
-            jobName= job
+            b.append(job)
+            jobName=b
         }
         return jobName // dump the initial comma
     }
