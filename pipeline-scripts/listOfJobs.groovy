@@ -10,7 +10,7 @@ def Folder findFolder(String folderName) {
     return null
 }
 
-def jobList[]
+def jobList = []
 
 def List listProjectItems() {
     Folder projectFolder = findFolder('TestJobs')
