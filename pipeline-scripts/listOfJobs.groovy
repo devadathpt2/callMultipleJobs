@@ -10,14 +10,16 @@ def Folder findFolder(String folderName) {
     return null
 }
 
+def jobList[]
 
-def String listProjectItems() {
+def List listProjectItems() {
     Folder projectFolder = findFolder('TestJobs')
     StringBuilder b = new StringBuilder()
     if (projectFolder) {
 
         for (job in projectFolder.items.sort{it.name.toUpperCase()}) {
-            b.append(',').append(job.fullName)
+//            b.append(',').append(job.fullName)
+            jobList.add(job)
         }
         return b.substring(1) // dump the initial comma
     }
