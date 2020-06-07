@@ -15,7 +15,6 @@ def String listProjectItems() {
     Folder projectFolder = findFolder('TestJobs')
     def myList = []
     StringBuilder b = new StringBuilder()
-    b.append(',TestJobs/')
     if (projectFolder) {
 
         for (job in projectFolder.items) {
