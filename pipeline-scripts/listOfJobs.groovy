@@ -25,7 +25,7 @@ def String listProjectItems() {
 //            jobName=b
 //            myList.add(jobName)
         }
-        return b.subString(1) // dump the initial comma
+        return b.substring(1) // dump the initial comma
     }
     return b.toString()
 }
