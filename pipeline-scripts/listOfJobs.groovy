@@ -14,6 +14,7 @@ def Folder findFolder(String folderName) {
 def String listProjectItems() {
     Folder projectFolder = findFolder('TestJobs')
     StringBuilder b = new StringBuilder()
+    b.append('TestJobs/')
     String jobName
     if (projectFolder) {
 
