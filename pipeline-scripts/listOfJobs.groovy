@@ -24,6 +24,4 @@ String listProjectItems() {
     return b.toString()
 }
 
-//return [
-//        listProjectItems: this.&listProjectItems
-//]
+return this
