@@ -1,7 +1,7 @@
 import com.cloudbees.hudson.plugins.folder.Folder
 import jenkins.model.Jenkins
 
-Folder findFolder(String folderName) {
+def Folder findFolder(String folderName) {
     for (folder in Jenkins.instance.items) {
         if (folder.name == folderName) {
             return folder
@@ -11,7 +11,7 @@ Folder findFolder(String folderName) {
 }
 
 
-String listProjectItems() {
+def String listProjectItems() {
     Folder projectFolder = findFolder('TestJobs')
     StringBuilder b = new StringBuilder()
     if (projectFolder) {
@@ -23,5 +23,11 @@ String listProjectItems() {
     }
     return b.toString()
 }
+
+def printSomething()
+{
+    println("It's SUCCESS!!!!!!!")
+}
+
 
 return this
