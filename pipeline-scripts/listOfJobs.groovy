@@ -25,5 +25,5 @@ String listProjectItems() {
 }
 
 return [
-        listProjectItems: this.listProjectItems
+        listProjectItems: this.&listProjectItems
 ]
