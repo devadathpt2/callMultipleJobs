@@ -12,7 +12,7 @@ def Folder findFolder(String folderName) {
 
 def jobList = []
 
-def List listProjectItems() {
+def ArrayList listProjectItems() {
     Folder projectFolder = findFolder('TestJobs')
     StringBuilder b = new StringBuilder()
     if (projectFolder) {
