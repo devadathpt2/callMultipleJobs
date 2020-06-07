@@ -25,7 +25,7 @@ def ArrayList listProjectItems() {
             jobName=b
             myList.add(jobName)
         }
-        return jobName // dump the initial comma
+        return myList // dump the initial comma
     }
     return b.toString()
 }
