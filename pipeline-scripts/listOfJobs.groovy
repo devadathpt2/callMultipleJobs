@@ -14,7 +14,7 @@ def Folder findFolder(String folderName) {
 def String listProjectItems() {
     Folder projectFolder = findFolder('TestJobs')
     StringBuilder b = new StringBuilder()
-    string jobName
+    String jobName
     if (projectFolder) {
 
         for (job in projectFolder.items.sort{it.name}) {
