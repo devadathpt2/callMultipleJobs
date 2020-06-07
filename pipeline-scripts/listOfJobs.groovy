@@ -21,7 +21,7 @@ def String listProjectItems() {
 
 //            String jobName
             b.append(',')
-            b.append(job.name)
+            b.append('TestJobs/').append(job.name)
 //            jobName=b
 //            myList.add(jobName)
         }
