@@ -1,7 +1,4 @@
 import com.cloudbees.hudson.plugins.folder.Folder
-import javax.xml.transform.stream.StreamSource
-import hudson.model.AbstractItem
-import hudson.XmlFile
 import jenkins.model.Jenkins
 
 Folder findFolder(String folderName) {
@@ -20,7 +17,7 @@ String listProjectItems() {
     if (projectFolder) {
 
         for (job in projectFolder.items.sort{it.name.toUpperCase()}) {
-            b.append(',').append(job.fullName)
+            b.append(',').append(job.getFullName)
         }
         return b.substring(1) // dump the initial comma
     }
