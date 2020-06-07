@@ -16,7 +16,7 @@ def String listProjectItems() {
     StringBuilder b = new StringBuilder()
     if (projectFolder) {
 
-        for (job in projectFolder.items.sort{it.name.toUpperCase()}) {
+        for (job in projectFolder.items.sort{it.name}) {
             b.append(job)
         }
         return b // dump the initial comma
