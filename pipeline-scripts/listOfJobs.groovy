@@ -28,7 +28,7 @@ def String listProjectItems() {
         }
         return b // dump the initial comma
     }
-    return b.toString()
+    return b.toString().SubString(1)
 }
 
 def printSomething()
