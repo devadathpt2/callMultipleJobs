@@ -25,9 +25,9 @@ def String listProjectItems() {
 //            jobName=b
 //            myList.add(jobName)
         }
-        return b // dump the initial comma
+        return b.subString(1) // dump the initial comma
     }
-    return b.toString().SubString(1)
+    return b.toString()
 }
 
 def printSomething()
