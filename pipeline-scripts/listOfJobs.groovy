@@ -18,7 +18,7 @@ def String listProjectItems() {
     String jobName
     if (projectFolder) {
 
-        for (job in projectFolder.items.sort{it.name}) {
+        for (job in projectFolder.items) {
             b.append(job)
             jobName=b
         }
