@@ -21,6 +21,7 @@ def String listProjectItems() {
         for (job in projectFolder.items) {
 
 //            String jobName
+            b.append(',')
             b.append(job)
 //            jobName=b
 //            myList.add(jobName)
