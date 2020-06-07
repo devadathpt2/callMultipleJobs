@@ -11,21 +11,21 @@ def Folder findFolder(String folderName) {
 }
 
 
-def ArrayList listProjectItems() {
+def String listProjectItems() {
     Folder projectFolder = findFolder('TestJobs')
     def myList = []
-
+    StringBuilder b = new StringBuilder()
+    b.append(',TestJobs/')
     if (projectFolder) {
 
         for (job in projectFolder.items) {
-            StringBuilder b = new StringBuilder()
-            b.append('TestJobs/')
-            String jobName
+
+//            String jobName
             b.append(job)
-            jobName=b
-            myList.add(jobName)
+//            jobName=b
+//            myList.add(jobName)
         }
-        return myList // dump the initial comma
+        return b // dump the initial comma
     }
     return b.toString()
 }
